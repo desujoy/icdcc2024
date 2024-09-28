@@ -359,7 +359,7 @@ const teamData = {
     44: {
         name: "Dr. Deden Kurniawan",
         info: "Dr. Deden Kurniawan, SH, MH, ME, is a distinguished academic affiliated with Universitas Budi Luhur. He holds multiple degrees in law (SH), humanities (MH), and economics (ME), reflecting a diverse academic background. His role within the university extends beyond teaching, as he is actively involved in various academic and institutional activities. Universitas Budi Luhur is well-known for offering a wide range of academic programs, and Dr. Deden's expertise contributes to its strong focus on law and business studies. For more specific information on his contributions and role at Universitas Budi Luhur, you can refer to the official university website​(Budi Luhur University)​(Universitas Budi Luhur). ",
-        inage: "images/committee/deden.jpg",
+        image: "images/committee/Deden-Kurniawan-2-transformed.jpeg",
     },
     45: {
         name: "Dr. Harvinder Singh",
