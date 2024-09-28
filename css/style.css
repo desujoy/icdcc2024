@@ -110,7 +110,6 @@
     width: 45%;
     height: 100%;
 }
-
 .keynote{
     display: flex;
     justify-content: center;
@@ -229,6 +228,7 @@
     height: 88vh;
     overflow: hidden;
 }
+
 .header-carousel .owl-nav {
     position: absolute;
     top: 50%;
@@ -314,6 +314,10 @@
     width: calc(100% + 60px);
     left: 0;
 }
+
+
+
+
 
 
 /*** Service ***/
@@ -627,6 +631,10 @@
     color: #fff; font-weight: bold;
   }
 
+  .name:hover{
+    border-bottom: 2px solid white;
+    transition: 2s ease-in-out;
+  }
   .speaker .background{
     background-position: center;
   }
