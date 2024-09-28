@@ -525,38 +525,91 @@
 .image-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 5vmin;
-    
-  }
-  .slideshow {
-    flex: 1;
-     /* Left half of the screen */
-    flex-basis: 60%;
-  }
-  .hero-video {
-    flex: 1;
-    /* Right half of the screen */
-    flex-basis: 40%;
-  }
-  /* Reverse the carousel sliding direction */
-  .carousel-item-next,
-  .carousel-item-start {
-    transform: translateX(-100%) !important;
-  }
-  .carousel-item-prev,
-  .carousel-item-end {
-    transform: translateX(100%) !important;
-  }
+    align-items: flex-start; /* Align items to the top to prevent overlap */
+    gap: 3vmin; /* Reduced gap for smoother appearance */
+    padding: 2vmin; /* Added padding to create more space around the content */
+    margin: 0 auto; /* Center the entire container */
+}
 
-  .slideshow img {
-    width: 100%;
-    height: auto;
-  }
-  .hero-video video {
-    width: 100%;
-    height: auto;
-  }
+.slideshow {
+    flex: 1;
+    flex-basis: 60%; /* Left half - occupies 60% */
+    max-width: 60vw; /* Ensure the slideshow doesn't stretch too much */
+}
+
+.hero-video {
+    flex: 1;
+    flex-basis: 40%; /* Right half - occupies 40% */
+    max-width: 40vw; /* Prevent video from shrinking too much */
+    height: auto; /* Ensure video maintains its aspect ratio */
+}
+
+/* Prevent overlap by ensuring consistent heights */
+.keyactive {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vmin; /* Space between keynote speakers */
+}
+
+.speaker {
+    position: relative;
+    width: 30%;
+    min-width: 28vmin; /* Set a consistent width for each speaker */
+}
+
+.background {
+    display: flex;
+    align-items: flex-end; /* Adjust vertical alignment */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px -10em 70px -50px rgba(0, 0, 0, 0.5); /* Smoother shadow */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.background:hover {
+    box-shadow: inset 0px -11em 70px -50px rgba(0, 0, 0, 0.7); /* Subtle hover effect */
+}
+
+.backColor {
+    padding: 1vmin 0; /* Reduced padding for a sleeker look */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Subtle background for text visibility */
+}
+
+.name {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+@media (max-width: 991.98px) {
+    .image-container {
+        flex-direction: column; /* Stack items on top of each other on smaller screens */
+        gap: 5vmin; /* More gap for better separation */
+    }
+
+    .hero-video {
+        width: 100%; /* Ensure full-width for mobile */
+    }
+
+    .slideshow {
+        width: 100%; /* Ensure full-width for mobile */
+    }
+
+    .keyactive {
+        flex-wrap: wrap; /* Stack keynote speakers on smaller screens */
+        justify-content: center;
+        gap: 3vmin;
+    }
+
+    .speaker {
+        width: 45%; /* Increase size for better visibility on mobile */
+        min-width: 40vmin;
+    }
+}
+
+
+
 
   /* this section is for adding horizontal scroll for cards */
   /* Container that holds the scrolling cards */
@@ -761,5 +814,6 @@
     border-bottom: 1px solid white;
     transition: 2s ease-in-out;
   }
+  
   
   
