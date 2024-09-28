@@ -21,11 +21,7 @@
     z-index: 99;
 }
 
-.image-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 /*** Spinner ***/
@@ -111,8 +107,35 @@
 }
 
 .hero-video{
-    width: 50%;
+    width: 45%;
     height: 100%;
+}
+
+.keynote{
+    display: flex;
+    justify-content: center;
+}
+
+.keyactive{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2vmin;
+}
+.speaker{
+    position: relative;
+    width: 30%;
+}
+.speaker-img{
+    width: 100%;
+    aspect-ratio: 4/5;
+}
+.speaker-nm{
+    width: 100%;
+    position: absolute;
+    bottom: 1vmin;
+    text-align: center;
+    color: white;
 }
 
 @media (max-width: 991.98px) {
@@ -202,7 +225,10 @@
         object-fit: cover;
     }
 }
-
+.header-carousel{
+    height: 88vh;
+    overflow: hidden;
+}
 .header-carousel .owl-nav {
     position: absolute;
     top: 50%;
@@ -254,6 +280,7 @@
     position: relative;
     display: inline-block;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .section-title::before {
@@ -469,3 +496,137 @@
     padding-right: 0;
     border-right: none;
 }
+
+
+.div-height
+.background
+{
+    height: 100%;
+    text-align: center;
+
+}
+
+.div-height{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+/* testing of slideshow addition */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vmin;
+    
+  }
+  .slideshow {
+    flex: 1;
+     /* Left half of the screen */
+    flex-basis: 60%;
+  }
+  .hero-video {
+    flex: 1;
+    /* Right half of the screen */
+    flex-basis: 40%;
+  }
+  /* Reverse the carousel sliding direction */
+  .carousel-item-next,
+  .carousel-item-start {
+    transform: translateX(-100%) !important;
+  }
+  .carousel-item-prev,
+  .carousel-item-end {
+    transform: translateX(100%) !important;
+  }
+
+  .slideshow img {
+    width: 100%;
+    height: auto;
+  }
+  .hero-video video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* this section is for adding horizontal scroll for cards */
+  /* Container that holds the scrolling cards */
+  .scroll-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scroll */
+    flex-wrap: nowrap; /* Prevents wrapping to multiple rows */
+    gap: 1rem; /* Optional: Adds space between cards */
+    padding-bottom: 1rem; /* Optional: Padding at the bottom */
+    box-shadow: inset 20px 0px 20px -20px rgba(0, 0, 0, 0.3), 
+                inset -20px 0px 20px -20px rgba(0, 0, 0, 0.3);
+    scroll-behavior: smooth;
+    border-radius: 20px;
+    z-index: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
+  /* Styling for the scrollbar */
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+ 
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    width: 10px;
+    opacity: 50%; /* Thumb color */
+    border-radius: 10px;
+   
+
+}
+
+
+
+.scroll-container::-webkit-scrollbar-thumb:focus {
+    opacity: 70%;
+    border-radius: 10px;
+    transition: 10s ease-in-out;
+
+}
+
+
+
+  /* Flex item styling */
+  .team-item {
+    min-width: 250px; /* Controls the minimum width of the cards */
+    flex: 0 0 auto;   /* Prevents flexbox from stretching the cards */
+  }
+
+
+  /* background as image */
+  .background{
+    display: flex;
+    align-items: end;
+    box-shadow: inset 0px -10em 70px -50px rgba(0, 0, 0, 0.5);
+     
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    z-index: 20px;
+  }
+
+  .background:hover{
+    box-shadow: inset 0px -11em 70px -50px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+  }
+
+  .small{
+    color: blanchedalmond;
+  }
+
+  .name{
+    color: #fff; font-weight: bold;
+  }
+
+  .speaker .background{
+    background-position: center;
+  }
