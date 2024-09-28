@@ -67,16 +67,17 @@
                 <h4 class="bg-white section-title text-primary mb-3 mt-5 pe-3 text-capitalize text-start text-center">Chief
                     Patron</h4>
                 <div class="row g-4 div-height">
-                    <div class="wow fadeInUp col-lg-3 col-md-6" data-wow-delay=0.1s>
-                        <div class="background team-item "  style="background-image: url(images/committee/5.G.VISWANATHAN-Chancellor-e1686643660631.jpg); width: 300px; height: 324px;">
-                           
+                    <div class="wow fadeInUp col-lg-3 col-md-6" data-wow-delay="0.1s">
+                        <div class="background team-item" 
+                            style="background-image: url(images/committee/5.G.VISWANATHAN-Chancellor-e1686643660631.jpg); width: 300px; height: 324px;">
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name" >Hon'ble Dr. G. Viswanathan</h5><small class="small">Founder & Chancellor, VIT
-                                    University</small>
+                                <!-- Assign data-id to match the team member in the JS data -->
+                                <h5 class="mb-0 name" data-id="29">Hon'ble Dr. G. Viswanathan</h5>
+                                <small class="small">Founder & Chancellor, VIT University</small>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>   
             </div>
             <div class="wow fadeInUp col-lg-12" data-wow-delay=0.3s>
                 <h4 class="bg-white section-title text-primary mb-3 mt-3 pe-3 text-capitalize text-start">Patron
@@ -86,7 +87,7 @@
                         <div class="background team-item " style="background-image: url(images/committee/vp.jpg); width: 300px; height: 324px; ">
                            
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name" >Mr. Sankar Viswanathan</h5><small class="small">Vice President, VIT Bhopal
+                                <h5 class="mb-0 name" data-id="28">Mr. Sankar Viswanathan</h5><small class="small">Vice President, VIT Bhopal
                                     University</small>
                             </div>
                         </div>
@@ -95,7 +96,7 @@
                         <div class="background team-item patron" style="background-image: url(images/committee/kadambari.jpg); width: 300px; height: 324px; ">
                             
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name" >Ms. Kadhambari S. Viswanathan</h5><small class="small">Assistant Vice President,
+                                <h5 class="mb-0 name" data-id="27">Ms. Kadhambari S. Viswanathan</h5><small class="small">Assistant Vice President,
                                     VIT Bhopal University</small>
                             </div>
                         </div>
@@ -110,7 +111,7 @@
                         <div class="background team-item " style="background-image: url(images/committee/Pro-VC-Sir_C.jpg); width: 300px; height: 324px;">
                             
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Senthil Kumar Arumugam</h5><small class="small">Vice Chancellor, VIT Bhopal
+                                <h5 class="mb-0 name" data-id="26">Dr. Senthil Kumar Arumugam</h5><small class="small">Vice Chancellor, VIT Bhopal
                                     University</small>
                             </div>
                         </div>
@@ -119,7 +120,7 @@
                         <div class="background team-item co-patron" style="background-image: url(images/committee/debashish.jpg); width: 300px; height: 324px; ">
                             
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name" >Dr. Debashish Adhikari</h5><small class="small">Registrar, VIT Bhopal
+                                <h5 class="mb-0 name" data-id="3" >Dr. Debashish Adhikari</h5><small class="small">Registrar, VIT Bhopal
                                     University</small>
                             </div>
                         </div>
@@ -140,23 +141,36 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Richard Socher</h5>
+                                <h5 class="mb-0 name" data-id = "50">Richard Socher</h5>
                                 <small class="small">Scientist, CEO/Founder of you.com, Stanford University</small>
                             </div>
                         </div>
                     </div>
-                    <!-- Card 1 -->
-                    <div class="wow fadeInUp col-lg-3 col-md-6" data-wow-delay=0.1s>
-                        <div class="background team-item" style="background-image: url(images/committee/Ke-Lin_Du.jpg); width: 300px; height: 324px; ">
-                            <div class="image-container-committee overflow-hidden">
-                                
-                            </div>
-                            <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Ke-Lin Du</h5>
-                                <small class="small">Enterprise Scientist, Xonlink Inc. Hangzhou, China</small>
-                            </div>
+                    <!-- HTML code for the card -->
+                    <div class="wow fadeInUp col-lg-3 col-md-6" data-wow-delay="0.1s">
+                        <div class="background team-item" style="background-image: url(images/committee/Ke-Lin_Du.jpg); width: 300px; height: 324px;">
+                        <div class="image-container-committee overflow-hidden">
+                        </div>
+                        <div class="text-center p-3 w-100">
+                            <h5 class="mb-0 name" data-id="30">Dr. Ke-Lin Du</h5>
+                            <small class="small">Enterprise Scientist, Xonlink Inc. Hangzhou, China</small>
+                        </div>
                         </div>
                     </div>
+                    
+                    <!-- Pop-up HTML (Initially hidden) -->
+                    <div id="popup" class="popup-container">
+                        <div class="popup-content">
+                        <div class="popup-left">
+                            <img id="popup-image" src="" alt="Popup Image" />
+                        </div>
+                        <div class="popup-right">
+                            <h2 id="popup-name">Name</h2>
+                            <p id="popup-info">Info</p>
+                        </div>
+                        </div>
+                    </div>
+  
                     <!-- Card 2 -->
                     <div class="wow fadeInUp col-lg-3 col-md-6" data-wow-delay=0.1s>
                         <div class="background team-item" style="background-image: url(images/committee/Vinod-Pangracious.jpg); width: 300px; height: 324px; ">
@@ -164,11 +178,15 @@
                                
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Vinod Pangracious</h5>
+                                <h5 class="mb-0 name" data-id="31">Dr. Vinod Pangracious</h5>
                                 <small class="small">Associate Professor, American University in Dubai</small>
                             </div>
                         </div>
                     </div>
+
+                    
+                    
+                   
                     <!-- Card 3 -->
                     <div class="wow fadeInUp col-lg-3 col-md-6" data-wow-delay=0.1s>
                         <div class="background team-item" style="background-image: url(images/committee/Xavier.jpg); width: 300px; height: 324px; ">
@@ -176,7 +194,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Xavier Fernando</h5>
+                                <h5 class="mb-0 name" data-id="32">Dr. Xavier Fernando</h5>
                                 <small class="small">Director, TMU Intelligent Communication and Computing Lab, Canada</small>
                             </div>
                         </div>
@@ -188,7 +206,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Valentina Emilia Balas</h5>
+                                <h5 class="mb-0 name" data-id="33">Dr. Valentina Emilia Balas</h5>
                                 <small class="small">Professor, Aurel Vlaicu University of Arad / Academy of Romanian Scientists, Romania</small>
                             </div>
                         </div>
@@ -200,7 +218,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Xiaozhi Gao</h5>
+                                <h5 class="mb-0 name" data-id="34">Prof. Xiaozhi Gao</h5>
                                 <small class="small">Professor, University of Eastern Finland, Joensuu</small>
                             </div>
                         </div>
@@ -212,7 +230,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Thangavel Murugan</h5>
+                                <h5 class="mb-0 name" data-id="35">Dr. Thangavel Murugan</h5>
                                 <small class="small">Assistant Professor, Dept. of Information Systems & Security, Al Ain, UAE</small>
                             </div>
                         </div>
@@ -224,7 +242,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Henry Herman Loupias</h5>
+                                <h5 class="mb-0 name" data-id="36">Prof. Henry Herman Loupias</h5>
                                 <small class="small">Senior Lecturer at Pasundan University. Bandung</small>
                             </div>
                         </div>
@@ -236,7 +254,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Richard Kwasi Bannor</h5>
+                                <h5 class="mb-0 name" data-id="37">Prof. Richard Kwasi Bannor</h5>
                                 <small class="small">President, Ghana Society of Agribusiness Scientist, Sunyani, Ghana</small>
                             </div>
                         </div>
@@ -248,7 +266,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Bruce Schneier</h5>
+                                <h5 class="mb-0 name" data-id="38">Prof. Bruce Schneier</h5>
                                 <small class="small">American cryptographer, computer security professional, privacy specialist at Harvard Kennedy School</small>
                             </div>
                         </div>
@@ -260,7 +278,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Vidy Potdar</h5>
+                                <h5 class="mb-0 name" data-id="39">Prof. Vidy Potdar</h5>
                                 <small class="small">Associate Professor, Faculty of Business and Law, Curtin Perth - Australia</small>
                             </div>
                         </div>
@@ -272,7 +290,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof Rajkumar Buyya</h5>
+                                <h5 class="mb-0 name" data-id="40">Prof Rajkumar Buyya</h5>
                                 <small class="small">Redmond Barry Distinguished Professor and Director of the Cloud Computing and Distributed Systems (CLOUDS) Laboratory at the University of Melbourne, Australia</small>
                             </div>
                         </div>
@@ -284,7 +302,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Ashish Sharma</h5>
+                                <h5 class="mb-0 name" data-id="41">Prof. Ashish Sharma</h5>
                                 <small class="small">EDO & Vice President, Strategic Data Products at Novartis</small>
                             </div>
                         </div>
@@ -296,7 +314,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Dr. Aard J. Groen</h5>
+                                <h5 class="mb-0 name" data-id="42">Prof. Dr. Aard J. Groen</h5>
                                 <small class="small">Professor, of Entrepreneurship & Valorisation, University of Groningen, Groningen</small>
                             </div>
                         </div>
@@ -308,7 +326,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Syafrizal</h5>
+                                <h5 class="mb-0 name" data-id="43">Prof. Syafrizal</h5>
                                 <small class="small">Research Center for Public Policy, National research and innovation agency, Indonesia</small>
                             </div>
                         </div>
@@ -320,7 +338,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Deden Kurniawan</h5>
+                                <h5 class="mb-0 name" data-id="44">Dr. Deden Kurniawan</h5>
                                 <small class="small">SH, MH, ME Universitas Budi Luhur</small>
                             </div>
                         </div>
@@ -332,7 +350,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Harvinder Singh</h5>
+                                <h5 class="mb-0 name" data-id="45">Dr. Harvinder Singh</h5>
                                 <small class="small">Centre for Artificial Intelligence Research and Optimisation Torrens University Fortitude Valley, QLD, Australia</small>
                             </div>
                         </div>
@@ -344,7 +362,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Theyazn H.H Aldhyani</h5>
+                                <h5 class="mb-0 name" data-id="46">Dr. Theyazn H.H Aldhyani</h5>
                                 <small class="small">Vice Presidency for Graduate Studies and Scientific Research, King Faisal University, Saudi Arabia</small>
                             </div>
                         </div>
@@ -356,7 +374,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Rumi Iqbal Doewes</h5>
+                                <h5 class="mb-0 name" data-id="47">Rumi Iqbal Doewes</h5>
                                 <small class="small">Faculty at Sebales Maret University</small>
                             </div>
                         </div>
@@ -368,7 +386,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Dr. Vijayakumar Varadarajan</h5>
+                                <h5 class="mb-0 name" data-id="48">Prof. Dr. Vijayakumar Varadarajan</h5>
                                 <small class="small">Adjunct Professor at University of New South Wales, Sydney, Australia</small>
                             </div>
                         </div>
@@ -380,7 +398,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Jeshwanth Challagundla</h5>
+                                <h5 class="mb-0 name" data-id="49">Jeshwanth Challagundla</h5>
                                 <small class="small">Senior Machine Learning Engineer, Google, Inc.</small>
                             </div>
                         </div>
@@ -398,7 +416,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Durga Prasad Mohapatra</h5>
+                                <h5 class="mb-0 name" data-id="51">Dr. Durga Prasad Mohapatra</h5>
                                 <small class = "small">Professor, NIT Rourkela</small>
                             </div>
                         </div>
@@ -409,7 +427,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Abhishek Gupta</h5>
+                                <h5 class="mb-0 name" data-id="52">Dr. Abhishek Gupta</h5>
                                 <small class = "small">Senior Scientist, CSIR, India</small>
                             </div>
                         </div>
@@ -420,7 +438,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. B. Surendiran</h5>
+                                <h5 class="mb-0 name" data-id="53">Dr. B. Surendiran</h5>
                                 <small class = "small">Professor, NIT, Puducherry</small>
                             </div>
                         </div>
@@ -431,7 +449,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Rahul Hiremath</h5>
+                                <h5 class="mb-0 name" data-id="54">Dr. Rahul Hiremath</h5>
                                 <small class = "small">Professor, IIM Raipur</small>
                             </div>
                         </div>
@@ -442,7 +460,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Chandra Prakash</h5>
+                                <h5 class="mb-0 name" data-id="55">Dr. Chandra Prakash</h5>
                                 <small class = "small">Assistant Professor, SV-NIT, Surat</small>
                             </div>
                         </div>
@@ -453,7 +471,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Sajal Saha</h5>
+                                <h5 class="mb-0 name" data-id="56">Dr. Sajal Saha</h5>
                                 <small class = "small">Professor & Principal, Meghnad Saha Institute of Technology</small>
                             </div>
                         </div>
@@ -464,7 +482,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Mahesh Chandra Govil</h5>
+                                <h5 class="mb-0 name" data-id="57">Prof. Mahesh Chandra Govil</h5>
                                 <small class = "small">Director, NIT Sikkim</small>
                             </div>
                         </div>
@@ -475,7 +493,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Rakesh Jha</h5>
+                                <h5 class="mb-0 name" data-id="58">Prof. Rakesh Jha</h5>
                                 <small class = "small">Associate Professor, Central University of Jammu</small>
                             </div>
                         </div>
@@ -486,7 +504,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Uday Pratap Singh</h5>
+                                <h5 class="mb-0 name" data-id="59">Dr. Uday Pratap Singh</h5>
                                 <small class = "small">Associate Professor, Central University of Jammu</small>
                             </div>
                         </div>
@@ -497,7 +515,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. Akash Saxena</h5>
+                                <h5 class="mb-0 name" data-id="60">Prof. Akash Saxena</h5>
                                 <small class = "small">Central University of Haryana</small>
                             </div>
                         </div>
@@ -508,7 +526,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Sanjay Panda</h5>
+                                <h5 class="mb-0 name" data-id="61">Dr. Sanjay Panda</h5>
                                 <small class = "small">Associate Professor, NIT Warangal</small>
                             </div>
                         </div>
@@ -519,7 +537,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Premanand S Chauhan</h5>
+                                <h5 class="mb-0 name" data-id="62">Dr. Premanand S Chauhan</h5>
                                 <small class = "small">Director, S D Bansal College of Technology, Indore</small>
                             </div>
                         </div>
@@ -530,7 +548,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Jolly Masih</h5>
+                                <h5 class="mb-0 name" data-id="63">Dr. Jolly Masih</h5>
                                 <small class = "small">Assistant Dean, International Affairs at The School of Management (SoM), BML Munjal University (BMU), Haryanar</small>
                             </div>
                         </div>
@@ -541,7 +559,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Lalit Kumar Singh</h5>
+                                <h5 class="mb-0 name" data-id="64">Dr. Lalit Kumar Singh</h5>
                                 <small class = "small">Senior Scientist Head, Artificial Intelligence Applications NPCIL-BARC, India</small>
                             </div>
                         </div>
@@ -552,7 +570,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Prof. S. Vijayakumar Bharathi</h5>
+                                <h5 class="mb-0 name" data-id="65">Prof. S. Vijayakumar Bharathi</h5>
                                 <small class = "small">Professor SAP UA Academic Board, APJC, Pune</small>
                             </div>
                         </div>
@@ -563,7 +581,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Anupama Agarwal</h5>
+                                <h5 class="mb-0 name" data-id="66">Dr. Anupama Agarwal</h5>
                                 <small class = "small">Senior Associate Professor, SAGE University, Bhopal</small>
                             </div>
                         </div>
@@ -585,7 +603,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Poonkuntran S</h5>
+                                <h5 class="mb-0 name" data-id="4">Dr. Poonkuntran S</h5>
                                 <small class = "small">Executive Dean, VIT Bhopal</small>
                             </div>
                         </div>
@@ -596,7 +614,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Pon Harshavardhanan</h5>
+                                <h5 class="mb-0 name" data-id="5">Dr. Pon Harshavardhanan</h5>
                                 <small class = "small">Dean-SCAI, VIT Bhopal
                                     University</small>
                             </div>
@@ -607,8 +625,8 @@
                             <div class="image-container-committee overflow-hidden">
                                 
                             </div>
-                            <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Pushpinder Singh Patheja</h5>
+                            <div class="text-center p-3 w-100" >
+                                <h5 class="mb-0 name" data-id="7">Dr. Pushpinder Singh Patheja</h5>
                                 <small class = "small">Dean-SCOPE, VIT Bhopal
                                     University</small>
                             </div>
@@ -620,7 +638,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. M. Suresh</h5>
+                                <h5 class="mb-0 name" data-id="8">Dr. M. Suresh</h5>
                                 <small class = "small">Dean SEEE, VIT Bhopal</small>
                             </div>
                         </div>
@@ -631,7 +649,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Hemant Kumar Nashin</h5>
+                                <h5 class="mb-0 name" data-id="9">Dr. Hemant Kumar Nashin</h5>
                                 <small class = "small">Dean SASL, VIT Bhopal</small>
                             </div>
                         </div>
@@ -642,7 +660,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Sheetal Sharma</h5>
+                                <h5 class="mb-0 name" data-id="10">Dr. Sheetal Sharma</h5>
                                 <small class = "small">Dean SOA, VIT Bhopal</small>
                             </div>
                         </div>
@@ -653,7 +671,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Prasad Begde</h5>
+                                <h5 class="mb-0 name" data-id="11">Dr. Prasad Begde</h5>
                                 <small class = "small">Dean, VIT-BS</small>
                             </div>
                         </div>
@@ -664,7 +682,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Siddhartha Maiti</h5>
+                                <h5 class="mb-0 name" data-id="12">Dr. Siddhartha Maiti</h5>
                                 <small class = "small">SBET, VIT Bhopal</small>
                             </div>
                         </div>
@@ -675,7 +693,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. S. Balaguru</h5>
+                                <h5 class="mb-0 name" data-id="13">Dr. S. Balaguru</h5>
                                 <small class = "small">Dean, SMEC, VIT Bhopal</small>
                             </div>
                         </div>
@@ -693,7 +711,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Poonkuntran S</h5>
+                                <h5 class="mb-0 name"data-id="4">Dr. Poonkuntran S</h5>
                                 <small class = "small">Executive Dean, VIT Bhopal</small>
                             </div>
                         </div>
@@ -704,7 +722,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Pon Harshavardhanan</h5>
+                                <h5 class="mb-0 name" data-id="5">Dr. Pon Harshavardhanan</h5>
                                 <small class = "small">Dean-SCAI, VIT Bhopal
                                     University</small>
                             </div>
@@ -716,7 +734,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Pushpinder Singh Patheja</h5>
+                                <h5 class="mb-0 name" data-id="7">Dr. Pushpinder Singh Patheja</h5>
                                 <small class = "small">Dean-SCOPE, VIT Bhopal
                                     University</small>
                             </div>
@@ -734,9 +752,8 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Hemraj. S. Lamkuche</h5>
-                                <small class = "small">SCAI, VIT Bhopal
-                                    University</small>
+                                <h5 class="mb-0 name" data-id="14">Dr. Hemraj. S. Lamkuche</h5>
+                                <small class = "small">SCAI, VIT Bhopal University</small>
                             </div>
                         </div>
                     </div>
@@ -754,7 +771,7 @@
                                 
                             </div>
                                 <div class="text-center p-3 w-100">
-                                    <h5 class="mb-0 name">Dr. Venkat Prasad Padhy</h5>
+                                    <h5 class="mb-0 name" data-id="15">Dr. Venkat Prasad Padhy</h5>
                                     <small class = "small">SCAI, VIT Bhopal University</small>
                                 </div>
                             </div>
@@ -765,7 +782,7 @@
                                     
                                 </div>
                                 <div class="text-center p-3 w-100">
-                                    <h5 class="mb-0 name">Dr. H Azath</h5>
+                                    <h5 class="mb-0 name" data-id="16">Dr. H Azath</h5>
                                     <small class = "small">SCAI, VIT Bhopal University</small>
                                 </div>
                             </div>
@@ -776,7 +793,7 @@
                                     
                                 </div>
                                 <div class="text-center p-3 w-100 ">
-                                    <h5 class="mb-0 name">Dr. Virendra Singh Kushwah</h5>
+                                    <h5 class="mb-0 name" data-id="17">Dr. Virendra Singh Kushwah</h5>
                                     <small class = "small">SCAI, VIT Bhopal University</small>
                                 </div>
                             </div>
@@ -794,7 +811,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Devaraju S</h5>
+                                <h5 class="mb-0 name" data-id="18">Dr. Devaraju S</h5>
                                 <small class = "small">SCAI, VIT Bhopal University</small>
                             </div>
                         </div>
@@ -805,7 +822,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Shiv Manjaree Gopaliya</h5>
+                                <h5 class="mb-0 name" data-id="19">Dr. Shiv Manjaree Gopaliya</h5>
                                 <small class = "small">SMEC, VIT Bhopal University</small>
                             </div>
                         </div>
@@ -816,7 +833,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Siddharth Singh Chouhan</h5>
+                                <h5 class="mb-0 name" data-id="20">Dr. Siddharth Singh Chouhan</h5>
                                 <small class = "small">SASL, VIT Bhopal
                                     University</small>
                             </div>
@@ -828,7 +845,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Swagat Kumar Samantaray</h5>
+                                <h5 class="mb-0 name" data-id="21">Dr. Swagat Kumar Samantaray</h5>
                                 <small class = "small">SCAI, VIT Bhopal
                                     University</small>
                             </div>
@@ -840,7 +857,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. D. Saravanan</h5>
+                                <h5 class="mb-0 name" data-id="22">Dr. D. Saravanan</h5>
                                 <small class = "small">SASL, VIT Bhopal University</small>
                             </div>
                         </div>
@@ -857,7 +874,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Adarsh Patel</h5>
+                                <h5 class="mb-0 name" data-id="23">Dr. Adarsh Patel</h5>
                                 <small class = "small">SCAI, VIT Bhopal University</small>
                             </div>
                         </div>
@@ -868,7 +885,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. Subhash Chandra Patel</h5>
+                                <h5 class="mb-0 name" data-id="24">Dr. Subhash Chandra Patel</h5>
                                 <small class = "small">SCAI, VIT Bhopal University</small>
                             </div>
                         </div>
@@ -879,7 +896,7 @@
                                 
                             </div>
                             <div class="text-center p-3 w-100">
-                                <h5 class="mb-0 name">Dr. M. Manimaran</h5>
+                                <h5 class="mb-0 name" data-id="25">Dr. M. Manimaran</h5>
                                 <small class = "small">SCAI, VIT Bhopal University</small>
                             </div>
                         </div>
@@ -918,7 +935,7 @@
                         style=alignment:center>vitbhopal.ac.in</a>, All Right Reserved. <span
                         style="color: #070542;">Made
                         by 4yu5h &
-                        5uj0y</span></div>
+                        5uj0y and edited by Github: 4bh1n(Abhinav)</span></div>
             </div>
         </div>
     </div>
