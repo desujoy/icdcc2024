@@ -90,7 +90,7 @@
 
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
-    padding: 25px 0;
+    padding: 8px 0;
     color: #FFFFFF;
     font-size: 15px;
     text-transform: uppercase;
@@ -815,5 +815,24 @@
     transition: 2s ease-in-out;
   }
   
-  
-  
+
+  .nav-item{
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-item::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--dark);
+    transition: .3s;
+    
+}
+
+.nav-item:hover::before{
+    width: 100%
+}
