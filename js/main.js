@@ -531,6 +531,11 @@ const teamData = {
         info: "Prof. Sujit P. B. is a faculty member at the Indian Institute of Science Education and Research (IISER) Bhopal, specializing in theoretical and computational chemistry. His research interests encompass quantum chemistry, where he explores the electronic structure of molecules and chemical reactions, as well as molecular modeling, which involves using simulations to understand complex chemical systems. Additionally, he investigates the properties of materials at the molecular level to develop new materials with specific functionalities. At IISER Bhopal, Prof. Sujit plays a crucial role in guiding students in their academic pursuits, mentoring Ph.D. candidates, and supervising undergraduate research projects. His contributions to the academic community include publishing research papers in peer-reviewed journals and presenting at conferences, all while fostering a research-driven educational environment that promotes scientific inquiry and advancements in chemistry and related interdisciplinary fields. For specific details on his research projects and publications, visiting IISER Bhopal's official website or his academic profile would provide more insights.",
         image:"images/keynote/sujit.jpg",
     },
+    75:{
+        name:"Dr. Lalit Yagnik",
+        info: "With 25 years of experience as a business technology consultant and trusted advisor, I have worked across diverse regions including Australia/NZ, Singapore/ASEAN, India, USA, and the Middle East, serving both global enterprises and startups. My career spans roles at IBM, mid-sized companies, and startups, including founding IBM's software innovation centers in India and Singapore, and leading key technology initiatives as part of IBM’s global leadership. I also served as Managing Director for the Asia Pacific region at a Microsoft global technology partner for cloud engineering. Currently, I am the Chief Digital Officer for a global digital transformation company, while mentoring a venture fund and startups, one of which has achieved unicorn status. My expertise lies in guiding product ideation, strategy, market rollouts, and partnerships, with a focus on scaling Indian businesses globally through innovative tech solutions.",
+        image:"images/keynote/lalit\ yagnik.jpg",
+    },
   };
   
   // Function to open the popup
