@@ -23,6 +23,10 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d302890f648e8d1516db2de04507b9758fa6f99b
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -146,11 +150,16 @@
         display: flex;
         flex-direction: column ;
         gap: 10px;
+<<<<<<< HEAD
         justify-content: space-between;
         align-items: center;
         width: full;
         padding: 0;
         margin: 0;
+=======
+        justify-content: center;
+        align-items: center;
+>>>>>>> d302890f648e8d1516db2de04507b9758fa6f99b
     }
 
     .submit-button{
@@ -532,7 +541,10 @@
     gap: 3vmin; /* Reduced gap for smoother appearance */
     padding: 2vmin; /* Added padding to create more space around the content */
     margin: 0 auto; /* Center the entire container */
+<<<<<<< HEAD
     margin-top: 20px;
+=======
+>>>>>>> d302890f648e8d1516db2de04507b9758fa6f99b
 }
 
 .slideshow {
@@ -839,6 +851,7 @@
 
 .nav-item:hover::before{
     width: 100%
+<<<<<<< HEAD
 }
 
 /* Chief Guest Section */
@@ -912,3 +925,6 @@
     }
   }
 
+=======
+}
+>>>>>>> d302890f648e8d1516db2de04507b9758fa6f99b
