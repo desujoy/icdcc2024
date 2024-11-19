@@ -842,19 +842,24 @@
     text-align: center;
     padding: 3em 1em;
     background-color: #f9f9f9;
-    border-top: 2px solid #ddd;
+    margin-bottom: 3rem;
     border-bottom: 2px solid #ddd;
+    display: flex;
+    flex-direction: row;
+
   }
   
-  .chief-guest h2 {
+.chief-guest-heading {
     font-size: 36px;
     font-weight: bold;
     font-family: ' "Nunito", sans-serif;';
     text-transform: uppercase;
     color:#302e7c;
-    margin-bottom: 1.5em;
+    margin-top: 0;
+    margin-bottom: 2.6rem;
     position: relative;
     letter-spacing: 2px;
+    text-align: center;
   }
   
   .chief-guest .guest-content {
@@ -881,14 +886,15 @@
   .chief-guest-name {
     font-size: 24px;
     font-weight: bold;
-    color: #070542;
+    color: #0078d7;
     margin-bottom: 0.5em;
+    font-family: 'Open Sans', sans-serif;
   }
   
   .chief-guest-title {
     font-size: 18px;
     font-weight: 600;
-    color: #555;
+    color: #555555;
     margin-bottom: 1em;
   }
   
