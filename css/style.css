@@ -436,6 +436,9 @@
 
 
 /*** Footer ***/
+.footer{
+    margin-top: 0;
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -912,4 +915,98 @@
     .guest-details {
       text-align: center;
     }
+  }
+
+  .media-partner-banner {
+    text-align: center;
+    padding: 10px 5px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+  }
+  .media-partner-banner img {
+    max-width: 150px; /* Smaller size for the image */
+    height: auto;
+    vertical-align: middle;
+    margin-top: 5px;
+  }
+  .media-partner-banner h2 {
+    margin: 5px 0;
+    font-size: 1.2rem; /* Slightly smaller heading */
+    color: #343a40; /* Dark text for contrast */
+  }
+  .media-partner-banner p {
+    font-size: 0.9rem; /* Compact text size */
+    color: #6c757d;
+    margin: 5px 0;
+  }
+
+  /* Footer banner styling */
+  .media-partner-footer {
+    background-color: #070542; /* Dark footer background */
+    color: #fff;
+    padding: 15px 10px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0;
+  }
+  .media-partner-footer img {
+    max-width: full; /* Match top banner size */
+    height: 200px;
+    vertical-align: middle;
+    margin-top: 5px;
+  }
+  .media-partner-footer h2 {
+    
+    font-size: 1.2rem;
+    color: #ffc107; /* Highlighted text color */
+  }
+  .media-partner-footer p {
+    font-size: 0.9rem;
+    color: #ced4da; /* Softer text color */
+    
+  }
+  .media-partner-footer h2 a:hover{
+    text-decoration: underline;
+    transition: 0.4s ease-in-out;
+  }
+
+  .media-partner{
+    width: full;
+    height: 300px;
+    margin-bottom: 6rem;
+  }
+
+  .media-partner-name{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .media-partner-name:hover{
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+  }
+
+  .media-partner-info{
+    width: 650px;
+    text-align: justify;
+    justify-self: center;
+  }
+
+  .partner-info{
+    width: full;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+
+  .partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: full;
+    height: fit-content;
+    margin-top: 6rem;
+    
   }
