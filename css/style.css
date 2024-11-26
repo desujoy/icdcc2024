@@ -1010,3 +1010,8 @@
     margin-top: 6rem;
     
   }
+
+  marquee a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+  }
